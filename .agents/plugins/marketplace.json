@@ -1,0 +1,20 @@
+{
+  "name": "tanmai-marketplace",
+  "interface": {
+    "displayName": "探脉插件市场"
+  },
+  "plugins": [
+    {
+      "name": "tanmai",
+      "source": {
+        "source": "local",
+        "path": "./plugins/tanmai"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

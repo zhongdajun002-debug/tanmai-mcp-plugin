@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "tanmai",
+  "version": "0.1.0",
+  "description": "Connect to Tanmai for read-only, authorized ecommerce business analytics.",
+  "homepage": "https://tanmai.net",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "探脉 Tanmai",
+        "shortDescription": "Read-only ecommerce analytics",
+        "longDescription": "Connect to Tanmai through OAuth to query ecommerce business metrics within your authorized scope. Requires a Tanmai account and authorization.",
+        "category": "Productivity",
+        "capabilities": [
+          "Read"
+        ],
+        "websiteURL": "https://tanmai.net",
+        "logo": "./assets/icon.png",
+        "composerIcon": "./assets/icon.png",
+        "defaultPrompt": [
+          "查询本月销售额和净销售额，并说明数据范围与口径。",
+          "按店铺列出本月销售额前十名。",
+          "比较本周与上周的销售表现。"
+        ]
+      },
+      "publication": {
+        "release_notes": "Initial release connecting to the existing Tanmai remote MCP server using OAuth and read-only access."
+      }
+    }
+  }
+}
